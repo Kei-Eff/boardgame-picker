@@ -52,6 +52,8 @@ Some possible additional features to be implemented after core set runs (with no
 * Confirm Choice - prompt to ask users if choice is final (Y/N or True/False) to allow for `boolean` implementation.
 * User added games - to give users the ability to add a tabletop game not currently included in the database; also allowing them to assign number of players, game duration, and genre.
 
+## User Interaction & Experience
+
 
 
 
