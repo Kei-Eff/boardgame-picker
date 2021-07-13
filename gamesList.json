@@ -1,0 +1,300 @@
+{  
+    "boardgames" : [
+        {
+            "name": "Gloomhaven",
+            "players": [1],
+            "duration": ["long"],
+            "genre": "RPG",
+            "description": "Fantasy, Dungeon Crawler",
+            "player_interaction": "NA"
+        },
+        {
+            "name": "Terraforming Mars",
+            "players": [1],
+            "duration": ["long"],
+            "genre": "Strategy",
+            "description": "Space Sci-Fi, Mars, Resource Management and City Builder",
+            "player_interaction": "NA"
+        },
+        {
+            "name": "Coffee Roaster",
+            "players": [1],
+            "duration": ["short"],
+            "genre": "Light Strategy",
+            "description": "Slice-of-Life, Resource Management",
+            "player_interaction": "NA"
+        },
+        {
+            "name": "Robinson Crusoe: Adventures on the Cursed Island",
+            "players": [1, 2],
+            "duration": ["short", "long"],
+            "genre": "Adventure",
+            "description": "Shipwreck Survival, 18th Century",
+            "player_interaction": "Cooperative"
+        },
+        {
+            "name": "Arkham Horror",
+            "players": [1, 3],
+            "duration": ["long"],
+            "genre": "Adventure",
+            "description": "Eldritch Fantasy, Lovecraftian/Cthulu, Survival and Exploration",
+            "player_interaction": "Cooperative"
+        },
+        {
+            "name": "Scythe",
+            "players": [1],
+            "duration": ["long"],
+            "genre": "Strategy",
+            "description": "Alternate Modern History, 1920's, Resource Management",
+            "player_interaction": "NA"
+        },
+        {
+            "name": "Friday",
+            "players": [1],
+            "duration": ["short"],
+            "genre": "Strategy",
+            "description": "Shipwreck Survival, 18th Century",
+            "player_interaction": "NA"
+        },
+        {
+            "name": "Mage Knight",
+            "players": [1, 2, 3],
+            "duration": ["long"],
+            "genre": "RPG",
+            "description": "Fantasy Wargaming, Magic Society",
+            "player_interaction": "Cooperative"
+        },
+        {
+            "name": "Sherlock Holmes Consulting Detective",
+            "players": [1, 2],
+            "duration": ["long"],
+            "genre": "Adventure",
+            "description": "Modern History/Literature, Mystery, 19th Century",
+            "player_interaction": "Cooperative"
+        },
+        {
+            "name": "Viticulture",
+            "players": [1, 2, 3],
+            "duration": ["short", "long"],
+            "genre": "Strategy",
+            "description": "Slice-of-Life, Farm/Vineyard Resource Management",
+            "player_interaction": "Competitive"
+        },
+        {
+            "name": "Tainted Grail: The Fall of Avalon",
+            "players": [1, 2],
+            "duration": ["long"],
+            "genre": "RPG",
+            "description": "Fantasy, Arthurian/Celtic Mythology, Dungeon Crawler",
+            "player_interaction": "Cooperative"
+        },
+        {
+            "name": "Massive Darkness",
+            "players": [1],
+            "duration": ["long"],
+            "genre": "RPG",
+            "description": "Fantasy, Dungeon Crawler",
+            "player_interaction": "Cooperative"
+        },
+        {
+            "name": "Welcome To",
+            "players": [1, 3],
+            "duration": ["short"],
+            "genre": "Light Strategy",
+            "description": "Slice-of-Life, 1950's Modern History, Town Planning, Pen and Paper",
+            "player_interaction": "Competitive"
+        },
+        {
+            "name": "Santorini",
+            "players": [2, 3],
+            "duration": ["short"],
+            "genre": "Light Strategy",
+            "description": "Modern, Slice-of-Life, in Greece",
+            "player_interaction": "Competitive"
+        },
+        {
+            "name": "Hive",
+            "players": [2],
+            "duration": ["short"],
+            "genre": "Light Strategy",
+            "description": "Slice-of-Life, Insect Collection and Head-to-Head Puzzle",
+            "player_interaction": "Competitive"
+        },
+        {
+            "name": "Grand Austria Hotel",
+            "players": [2],
+            "duration": ["short"],
+            "genre": "Strategy",
+            "description": "Modern History, 1920's Hotel Management",
+            "player_interaction": "Competitive"
+        },
+        {
+            "name": "Star Wars: Rebellion",
+            "players": [2],
+            "duration": ["long"],
+            "genre": "Grand Strategy",
+            "description": "Sci-Fi Wargaming, Star Wars Universe",
+            "player_interaction": "Competitive"
+        },
+        {
+            "name": "Stratego",
+            "players": [2],
+            "duration": ["short"],
+            "genre": "Strategy",
+            "description": "Classic, Modern History Wargames",
+            "player_interaction": "Competitive"
+        },
+        {
+            "name": "Codenames: Duet",
+            "players": [2],
+            "duration": ["short"],
+            "genre": "Family/Party",
+            "description": "Modern Day, Spies and Mystery",
+            "player_interaction": "Cooperative"
+        },
+        {
+            "name": "7 Wonders: Duel",
+            "players": [2],
+            "duration": ["long"],
+            "genre": "Grand Strategy",
+            "description": "Ancient History, City Building and Management",
+            "player_interaction": "Competitive"
+        },
+        {
+            "name": "War of the Ring",
+            "players": [2],
+            "duration": ["long"],
+            "genre": "Grand Strategy",
+            "description": "Fantasy Wargaming, Lord of the Rings Universe",
+            "player_interaction": "Competitive"
+        },
+        {
+            "name": "Res Arcana",
+            "players": [2],
+            "duration": ["short"],
+            "genre": "Strategy",
+            "description": "Fantasy, Magical Duels",
+            "player_interaction": "Competitive"
+        },
+        {
+            "name": "Fog of Love",
+            "players": [2],
+            "duration": ["short"],
+            "genre": "Couples",
+            "description": "Slice-of-Life, Dating and Romance",
+            "player_interaction": "Romantic"
+        },
+        {
+            "name": "Cottage Garden",
+            "players": [2],
+            "duration": ["short"],
+            "genre": "Couples",
+            "description": "Slice-of-Life, Gardening",
+            "player_interaction": "Romantic"
+        },
+        {
+            "name": "Touch & Tell",
+            "players": [2],
+            "duration": ["short"],
+            "genre": "Couples",
+            "description": "Conversational, Romance",
+            "player_interaction": "Romantic"
+        },
+        {
+            "name": "Our Moments - Couples",
+            "players": [2],
+            "duration": ["short"],
+            "genre": "Couples",
+            "description": "Conversational, Dating and Romance",
+            "player_interaction": "Romantic"
+        },
+        {
+            "name": "Betrayal at House on the Hill",
+            "players": [3],
+            "duration": ["long"],
+            "genre": "Adventure",
+            "description": "Mystery, Horror, Haunted House, Survival and Exploration",
+            "player_interaction": "Cooperative"
+        },
+        {
+            "name": "Betrayal at Baldur's Gate",
+            "players": [3],
+            "duration": ["long"],
+            "genre": "Adventure",
+            "description": "Fantasy, D&D and Baldur's Gate Universe, Survival and Exploration",
+            "player_interaction": "Cooperative"
+        },
+        {
+            "name": "Settlers of Catan",
+            "players": [3],
+            "duration": ["long"],
+            "genre": "Strategy",
+            "description": "Historical, Civilisation and City Building",
+            "player_interaction": "Competitive"
+        },
+        {
+            "name": "Splendor",
+            "players": [3],
+            "duration": ["short"],
+            "genre": "Family/Party",
+            "description": "Historical, Renaissance, Resource Management",
+            "player_interaction": "Competitive"
+        },
+        {
+            "name": "Ticket to Ride",
+            "players": [3],
+            "duration": ["long"],
+            "genre": "Family/Party",
+            "description": "Modern History, Trains and Transport Management",
+            "player_interaction": "Competitive"
+        },
+        {
+            "name": "Pandemic",
+            "players": [3],
+            "duration": ["long"],
+            "genre": "Strategy",
+            "description": "Modern History, Virology and Epedimiology, Disaster Management",
+            "player_interaction": "Cooperative"
+        },
+        {
+            "name": "Merchant of Venus",
+            "players": [3],
+            "duration": ["long"],
+            "genre": "Strategy",
+            "description": "Sci-Fi Space Exploration and Trading, Resource Management",
+            "player_interaction": "Competitive"
+        },
+        {
+            "name": "Wingspan",
+            "players": [3],
+            "duration": ["long"],
+            "genre": "Family/Party",
+            "description": "Modern, Strategy, Slice-of-Life Bird Watching and Collection",
+            "player_interaction": "Competitive"
+        },
+        {
+            "name": "Lords of Waterdeep",
+            "players": [3],
+            "duration": ["long"],
+            "genre": "Strategy",
+            "description": "Fantasy City Building and Resource Management, D&D Universe",
+            "player_interaction": "Competitive"
+        },
+        {
+            "name": "5-Minute Dungeon",
+            "players": [2, 3],
+            "duration": ["short"],
+            "genre": "Family/Party",
+            "description": "Fantasy, Dungeon Crawler",
+            "player_interaction": "Cooperative"
+        },
+        {
+            "name": "Sushi Go Party!",
+            "players": [2, 3],
+            "duration": ["short"],
+            "genre": "Family/Party",
+            "description": "Slice-of-Life, Sushi Restaurant, Resource Gathering",
+            "player_interaction": "Competitive"
+        }
+    ]
+}
