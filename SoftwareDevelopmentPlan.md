@@ -49,8 +49,10 @@ At the end of the questions segment, users wil be given a list of games that wil
 Some possible additional features to be implemented after core set runs (with no errors):
 
 * "Back Button"/Redo Last - to allow users to go back to the previous question.
-* Confirm Choice - prompt to ask users if choice is final (Y/N or True/False) to allow for `boolean` implementation.
+* Confirm Choice - prompt to ask users if choice is final (Y/N or True/False) to allow for `boolean` implementation. (Likely moot/limited use with previous point)
+* More Info - to display more details/short desciption about the games offered in results screen.
 * User added games - to give users the ability to add a tabletop game not currently included in the database; also allowing them to assign number of players, game duration, and genre.
+* Display ASCII "loading results" animation prior to displaying results screen.
 
 ## User Interaction & Experience
 

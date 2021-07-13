@@ -1,0 +1,22 @@
+{  
+    "boardgames" : [
+        {
+            "name": "Gloomhaven",
+            "players": [ 1 ],
+            "duration": ["long"],
+            "genre":"RPG"
+        },
+        {
+            "name": "Santorini",
+            "players": [ 2 ],
+            "duration": ["short"],
+            "genre":"Strategy"
+        },
+        {
+            "name": "Sherlock Holmes Consulting Detective",
+            "players": [ 1, 2 ],
+            "duration": ["short", "long"],
+            "genre":"Mystery"
+        }
+    ]
+}
