@@ -34,11 +34,17 @@ Questions will be gated and multiple choice for ease of use, so the application 
 
 ### Branching
 
-Users will be able to choose between 3 different options for the number of people playing: single-player, two-player, or party games. This will lock out certain game and genre options in the subsequent questions, narrowing down the list of games to be displayed in the end.
+Users will be able to choose between 3 different options for the number of people playing: single-player, two-player, or party games. After that, users can choose from game duration - either 'Short' (under 1 hour) or 'Long' (over 1 hour). This will then lock out certain genre options in the subsequent question, which further narrow it down when it comes to the game recommendations in the end.
 
 ### Multiple Choice
 
 The options offered by the app will be multiple choice. As mentioned in sections prior, this will help guide users in making the correct syntactic options. Any incorrect inputs will trigger a loop until the user chooses an available option.
+
+### Managed Database
+
+The list of tabletop games will be managed in a separate database file, which the application can reference from. I have chosen to use `JSON` as it is a built-in Python package and very closely mimics elements of dictionaries and lists we have learned about in class thus far. `MySQL` and `MongoDB` were considered, but felt like too big a challenge to learn with the current timeline.
+
+Outside of adding new genres/categories of games, this will also allow for new titles to be added (to the JSON file) without altering the application code.
 
 ### Restart/Exit
 
@@ -49,10 +55,11 @@ At the end of the questions segment, users wil be given a list of games that wil
 Some possible additional features to be implemented after core set runs (with no errors):
 
 * "Back Button"/Redo Last - to allow users to go back to the previous question.
-* Confirm Choice - prompt to ask users if choice is final (Y/N or True/False) to allow for `boolean` implementation. (Likely moot/limited use with previous point)
+* ~~Confirm Choice - prompt to ask users if choice is final (Y/N or True/False) to allow for `boolean` implementation. (Likely moot/limited use with previous point)~~
 * More Info - to display more details/short desciption about the games offered in results screen.
 * User added games - to give users the ability to add a tabletop game not currently included in the database; also allowing them to assign number of players, game duration, and genre.
 * Display ASCII "loading results" animation prior to displaying results screen.
+* Extra qualifier question: ask users whether they prefer competitive/head-to-head or cooperative gaming experiences (for multiplayer games).
 
 ## User Interaction & Experience
 
