@@ -32,7 +32,7 @@ Questions will be gated and multiple choice for ease of use, so the application 
 
 ### **Core Features**
 
-### Branching
+### Branching Paths
 
 Users will be able to choose between 3 different options for the number of people playing: single-player, two-player, or party games. After that, users can choose from game duration - either 'Short' (under 1 hour) or 'Long' (over 1 hour). This will then lock out certain genre options in the subsequent question, which further narrow it down when it comes to the game recommendations in the end.
 
@@ -64,7 +64,33 @@ Some possible additional features to be implemented after core set runs (with no
 
 ## User Interaction & Experience
 
+### Introduction Screen
+
+A short introduction screen will be displayed with a short explanation on what the program is about, and how to interact with each question.
+
+### Step-by-Step Interaction
+
+Answers for questions are presented with simplified options, to minimise user input error. Rather than asking for a string to be entered, multiple choice questions will only require a single digit input (plus 'Enter') to advance the application.
+
+### Error Handling
+
+Incorrect inputs will trigger a loop asking the user to redo their answer with an actionable input (or to exit the application).
+
+## Control Flow Diagram
+
+![img]
+
+## Implementation Plan
 
 
 
+## Status Updates
 
+### Update 1
+
+### Update 2
+
+
+## Application Testing
+
+## Developer Notes
