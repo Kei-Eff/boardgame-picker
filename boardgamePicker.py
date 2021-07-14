@@ -17,19 +17,19 @@ def inputNumberOfPlayers():
 
 Your Answer: ''')
     
-        errorMessage = "Invalid input. Please choose 1, 2, or 3.\n"
+        errorMessage = "\nInvalid input. Please choose 1, 2, or 3.\n"
 
         try:
             # try converting to int
             num_players = int(answer)
 
             # check if num_players is a valid choice
-            if (num_players != 1) and (num_players != 2) and (num_players != 3):
-                # it's not valid, so print error message
-                print(errorMessage)
+            if (num_players == 1) or (num_players == 2):
+                return str(num_players)
+            elif (num_players == 3):
+                return "3+" 
             else:
-                # it's valid, return the value
-                return num_players
+                print(errorMessage)
 
         except ValueError:
             print(errorMessage)
@@ -47,7 +47,7 @@ def inputGameDuration():
 
 Your Answer: ''')
     
-        errorMessage = "Invalid input. Please choose 1 or 2.\n"
+        errorMessage = "\nInvalid input. Please choose 1 or 2.\n"
 
         try:
             # try converting to int

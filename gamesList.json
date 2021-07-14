@@ -2,7 +2,7 @@
     "boardgames" : [
         {
             "name": "Gloomhaven",
-            "players": [1],
+            "players": ["1"],
             "duration": ["long"],
             "genre": "RPG",
             "description": "Fantasy, Dungeon Crawler",
@@ -10,7 +10,7 @@
         },
         {
             "name": "Terraforming Mars",
-            "players": [1],
+            "players": ["1"],
             "duration": ["long"],
             "genre": "Strategy",
             "description": "Space Sci-Fi, Mars, Resource Management and City Builder",
@@ -18,7 +18,7 @@
         },
         {
             "name": "Coffee Roaster",
-            "players": [1],
+            "players": ["1"],
             "duration": ["short"],
             "genre": "Light Strategy",
             "description": "Slice-of-Life, Resource Management",
@@ -26,7 +26,7 @@
         },
         {
             "name": "Robinson Crusoe: Adventures on the Cursed Island",
-            "players": [1, 2],
+            "players": ["1", "2"],
             "duration": ["short", "long"],
             "genre": "Adventure",
             "description": "Shipwreck Survival, 18th Century",
@@ -34,7 +34,7 @@
         },
         {
             "name": "Arkham Horror",
-            "players": [1, 3],
+            "players": ["1", "3+"],
             "duration": ["long"],
             "genre": "Adventure",
             "description": "Eldritch Fantasy, Lovecraftian/Cthulu, Survival and Exploration",
@@ -42,7 +42,7 @@
         },
         {
             "name": "Scythe",
-            "players": [1],
+            "players": ["1"],
             "duration": ["long"],
             "genre": "Strategy",
             "description": "Alternate Modern History, 1920's, Resource Management",
@@ -50,7 +50,7 @@
         },
         {
             "name": "Friday",
-            "players": [1],
+            "players": ["1"],
             "duration": ["short"],
             "genre": "Strategy",
             "description": "Shipwreck Survival, 18th Century",
@@ -58,7 +58,7 @@
         },
         {
             "name": "Mage Knight",
-            "players": [1, 2, 3],
+            "players": ["1", "2", "3+"],
             "duration": ["long"],
             "genre": "RPG",
             "description": "Fantasy Wargaming, Magic Society",
@@ -66,7 +66,7 @@
         },
         {
             "name": "Sherlock Holmes Consulting Detective",
-            "players": [1, 2],
+            "players": ["1", "2"],
             "duration": ["long"],
             "genre": "Adventure",
             "description": "Modern History/Literature, Mystery, 19th Century",
@@ -74,7 +74,7 @@
         },
         {
             "name": "Viticulture",
-            "players": [1, 2, 3],
+            "players": ["1", "2", "3+"],
             "duration": ["short", "long"],
             "genre": "Strategy",
             "description": "Slice-of-Life, Farm/Vineyard Resource Management",
@@ -82,7 +82,7 @@
         },
         {
             "name": "Tainted Grail: The Fall of Avalon",
-            "players": [1, 2],
+            "players": ["1", "2"],
             "duration": ["long"],
             "genre": "RPG",
             "description": "Fantasy, Arthurian/Celtic Mythology, Dungeon Crawler",
@@ -90,7 +90,7 @@
         },
         {
             "name": "Massive Darkness",
-            "players": [1],
+            "players": ["1"],
             "duration": ["long"],
             "genre": "RPG",
             "description": "Fantasy, Dungeon Crawler",
@@ -98,7 +98,7 @@
         },
         {
             "name": "Welcome To",
-            "players": [1, 3],
+            "players": ["1", "3+"],
             "duration": ["short"],
             "genre": "Light Strategy",
             "description": "Slice-of-Life, 1950's Modern History, Town Planning, Pen and Paper",
@@ -106,7 +106,7 @@
         },
         {
             "name": "Santorini",
-            "players": [2, 3],
+            "players": ["2", "3+"],
             "duration": ["short"],
             "genre": "Light Strategy",
             "description": "Modern, Slice-of-Life, in Greece",
@@ -114,7 +114,7 @@
         },
         {
             "name": "Hive",
-            "players": [2],
+            "players": ["2"],
             "duration": ["short"],
             "genre": "Light Strategy",
             "description": "Slice-of-Life, Insect Collection and Head-to-Head Puzzle",
@@ -122,7 +122,7 @@
         },
         {
             "name": "Grand Austria Hotel",
-            "players": [2],
+            "players": ["2"],
             "duration": ["short"],
             "genre": "Strategy",
             "description": "Modern History, 1920's Hotel Management",
@@ -130,7 +130,7 @@
         },
         {
             "name": "Star Wars: Rebellion",
-            "players": [2],
+            "players": ["2"],
             "duration": ["long"],
             "genre": "Grand Strategy",
             "description": "Sci-Fi Wargaming, Star Wars Universe",
@@ -138,7 +138,7 @@
         },
         {
             "name": "Stratego",
-            "players": [2],
+            "players": ["2"],
             "duration": ["short"],
             "genre": "Strategy",
             "description": "Classic, Modern History Wargames",
@@ -146,7 +146,7 @@
         },
         {
             "name": "Codenames: Duet",
-            "players": [2],
+            "players": ["2"],
             "duration": ["short"],
             "genre": "Family/Party",
             "description": "Modern Day, Spies and Mystery",
@@ -154,7 +154,7 @@
         },
         {
             "name": "7 Wonders: Duel",
-            "players": [2],
+            "players": ["2"],
             "duration": ["long"],
             "genre": "Grand Strategy",
             "description": "Ancient History, City Building and Management",
@@ -162,7 +162,7 @@
         },
         {
             "name": "War of the Ring",
-            "players": [2],
+            "players": ["2"],
             "duration": ["long"],
             "genre": "Grand Strategy",
             "description": "Fantasy Wargaming, Lord of the Rings Universe",
@@ -170,7 +170,7 @@
         },
         {
             "name": "Res Arcana",
-            "players": [2],
+            "players": ["2"],
             "duration": ["short"],
             "genre": "Strategy",
             "description": "Fantasy, Magical Duels",
@@ -178,7 +178,7 @@
         },
         {
             "name": "Fog of Love",
-            "players": [2],
+            "players": ["2"],
             "duration": ["short"],
             "genre": "Couples",
             "description": "Slice-of-Life, Dating and Romance",
@@ -186,7 +186,7 @@
         },
         {
             "name": "Cottage Garden",
-            "players": [2],
+            "players": ["2"],
             "duration": ["short"],
             "genre": "Couples",
             "description": "Slice-of-Life, Gardening",
@@ -194,7 +194,7 @@
         },
         {
             "name": "Touch & Tell",
-            "players": [2],
+            "players": ["2"],
             "duration": ["short"],
             "genre": "Couples",
             "description": "Conversational, Romance",
@@ -202,7 +202,7 @@
         },
         {
             "name": "Our Moments - Couples",
-            "players": [2],
+            "players": ["2"],
             "duration": ["short"],
             "genre": "Couples",
             "description": "Conversational, Dating and Romance",
@@ -210,7 +210,7 @@
         },
         {
             "name": "Betrayal at House on the Hill",
-            "players": [3],
+            "players": ["3+"],
             "duration": ["long"],
             "genre": "Adventure",
             "description": "Mystery, Horror, Haunted House, Survival and Exploration",
@@ -218,7 +218,7 @@
         },
         {
             "name": "Betrayal at Baldur's Gate",
-            "players": [3],
+            "players": ["3+"],
             "duration": ["long"],
             "genre": "Adventure",
             "description": "Fantasy, D&D and Baldur's Gate Universe, Survival and Exploration",
@@ -226,7 +226,7 @@
         },
         {
             "name": "Settlers of Catan",
-            "players": [3],
+            "players": ["3+"],
             "duration": ["long"],
             "genre": "Strategy",
             "description": "Historical, Civilisation and City Building",
@@ -234,7 +234,7 @@
         },
         {
             "name": "Splendor",
-            "players": [3],
+            "players": ["3+"],
             "duration": ["short"],
             "genre": "Family/Party",
             "description": "Historical, Renaissance, Resource Management",
@@ -242,7 +242,7 @@
         },
         {
             "name": "Ticket to Ride",
-            "players": [3],
+            "players": ["3+"],
             "duration": ["long"],
             "genre": "Family/Party",
             "description": "Modern History, Trains and Transport Management",
@@ -250,7 +250,7 @@
         },
         {
             "name": "Pandemic",
-            "players": [3],
+            "players": ["3+"],
             "duration": ["long"],
             "genre": "Strategy",
             "description": "Modern History, Virology and Epedimiology, Disaster Management",
@@ -258,7 +258,7 @@
         },
         {
             "name": "Merchant of Venus",
-            "players": [3],
+            "players": ["3+"],
             "duration": ["long"],
             "genre": "Strategy",
             "description": "Sci-Fi Space Exploration and Trading, Resource Management",
@@ -266,7 +266,7 @@
         },
         {
             "name": "Wingspan",
-            "players": [3],
+            "players": ["3+"],
             "duration": ["long"],
             "genre": "Family/Party",
             "description": "Modern, Strategy, Slice-of-Life Bird Watching and Collection",
@@ -274,7 +274,7 @@
         },
         {
             "name": "Lords of Waterdeep",
-            "players": [3],
+            "players": ["3+"],
             "duration": ["long"],
             "genre": "Strategy",
             "description": "Fantasy City Building and Resource Management, D&D Universe",
@@ -282,7 +282,7 @@
         },
         {
             "name": "5-Minute Dungeon",
-            "players": [2, 3],
+            "players": ["2", "3+"],
             "duration": ["short"],
             "genre": "Family/Party",
             "description": "Fantasy, Dungeon Crawler",
@@ -290,7 +290,7 @@
         },
         {
             "name": "Sushi Go Party!",
-            "players": [2, 3],
+            "players": ["2", "3+"],
             "duration": ["short"],
             "genre": "Family/Party",
             "description": "Slice-of-Life, Sushi Restaurant, Resource Gathering",
