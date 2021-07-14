@@ -56,11 +56,10 @@ Some possible additional features to be implemented after core set runs (with no
 
 * Add 'Player Interaction' field as another qualifier/filter, so that user/s can choose between competitive and cooperative styles of games ("NA" included for single-player games; "Romantic" included for _some_ two-player games).
 * "Back Button"/Redo Last - to allow users to go back to the previous question.
-* ~~Confirm Choice - prompt to ask users if choice is final (Y/N or True/False) to allow for `boolean` implementation. (Likely moot/limited use with previous point. Also poor UX)~~
+* Clear screen/full screen app display
 * More Info - to display more details/short desciption about the games offered in results screen. (Example: "Learn more about [game title]")
 * User added games - to give users the ability to add a tabletop game not currently included in the database; also allowing them to assign number of players, game duration, and genre.
 * Display ASCII "loading results" animation prior to displaying results screen.
-* Extra qualifier question: ask users whether they prefer competitive/head-to-head or cooperative gaming experiences (for multiplayer games).
 
 ## User Interaction & Experience
 
