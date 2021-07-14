@@ -106,10 +106,20 @@ Your Answer: ''')
             print(errorMessage)
 
 
-def getGameRecs()
+def getGameRecs(players, duration, genre):
+
+    filteredGames = filter(lambda game: players in game["players"] and duration in game["duration"] and genre in game["genre"], games)
+
+    gamesList = list(filteredGames)
+
+    sortedList = sorted(gamesList, key=lambda x: x["name"])
+
+    # prints final game suggestions!
+    for x in sortedList:
+        print(f"\t* {x['name']} - {x['description']}\n")
 
 
-
+# program starts here
 user_players = getNumberOfPlayers()
 print(f"\nNumber of players: {user_players}\n")
 
@@ -117,6 +127,7 @@ user_duration = getGameDuration()
 print(f"\nCool! Let's look for a {user_duration} game to play.\n")
 
 user_genre = getGameGenre(user_players, user_duration)
-print(f"\nAwesome! Here are some games in the {user_genre} genre you can play!\n")
+print(f"\nAwesome! Here are some {user_duration} {user_players} player games in the {user_genre} genre you can play!\n")
 
-game_recs = getGameRecs()
+getGameRecs(user_players, user_duration, user_genre)
+print()
