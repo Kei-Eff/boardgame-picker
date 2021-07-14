@@ -3,6 +3,22 @@ CCC-2021 T1A3 - Terminal Application - Karl Alberto
 
 # Development Log
 
+
+## Update 2
+### x, xx July 2021
+
+#### **Key Development Items**
+
+* 
+
+#### **Issues Encountered**
+
+#### **Development Roadblocks**
+
+#### **Miscellaneous Notes**
+
+---
+
 ## Update 1
 ### Wednesday, 14 July 2021
 
@@ -28,3 +44,5 @@ CCC-2021 T1A3 - Terminal Application - Karl Alberto
     * `if/else`; and
     * `try/except` blocks for error handling
 * Defined variables within functions to ensure code was "dry", especially for repeated error messages.
+
+---
