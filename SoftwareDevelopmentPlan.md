@@ -30,7 +30,7 @@ Questions will be gated and multiple choice for ease of use, so the application 
 
 ## Features
 
-### **Core Features**
+### **Main Features**
 
 ### Branching Paths
 
@@ -38,7 +38,7 @@ Users will be able to choose between 3 different options for the number of peopl
 
 ### Multiple Choice
 
-The options offered by the app will be multiple choice. As mentioned in sections prior, this will help guide users in making the correct syntactic options. Any incorrect inputs will trigger a loop until the user chooses an available option.
+The options offered by the app will be multiple choice. As mentioned in sections prior, this will help guide users in making the correct syntactic options. Any incorrect inputs will trigger a loop (along with an associated error message) until the user chooses an available option.
 
 ### Dataset
 
@@ -52,7 +52,8 @@ At the end of the questions segment, users wil be given a list of games that wil
 
 Some additional features that can be implemented after core features run (with no errors):
 
-* Include an "I'm Feeling Lucky" function that allows users to output a single, randomised game suggestion at the start of the program.
+* Additional Error Handling that will ensure the correct type of data is assigned to the program's variables, when requiring user input.
+* Include an "I'm Feeling Lucky" function that allows users to output a single, randomised game suggestion at the start of the program, skipping the questions.
 * Add 'Player Interaction' field as another qualifier/filter, so that user/s can choose between competitive and cooperative styles of games ("NA" included for single-player games; "Romantic" included for _some_ two-player games).
 * "Back Button"/Redo Last - to allow users to go back to the previous question.
 * Clear screen/full screen app display
@@ -80,10 +81,14 @@ Incorrect inputs will trigger a loop asking the user to redo their answer with a
 
 ## Implementation Plan
 
+[Implementation Plan](./implementation-plan.md) document can be found in the linked file.
+
 ![img] *Trello Board
 
 
 ## Status Updates
+
+[Status Updates](./development-log.md) document can be found in the linked file.
 
 ### Update 1
 
