@@ -11,6 +11,10 @@ CCC-2021 T1A3 - Terminal Application - Karl Alberto
 
 * 
 
+#### **Key Learnings**
+
+* 
+
 #### **Issues Encountered**
 
 #### **Development Roadblocks**

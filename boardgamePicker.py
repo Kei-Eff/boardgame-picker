@@ -1,6 +1,6 @@
 import json
 
-with open("gamesList.json", "r") as json_file:
+with open("./data/gamesList.json", "r") as json_file:
     game_data = json.load(json_file)
 
 games = game_data["boardgames"]
@@ -11,14 +11,40 @@ def quitting(user_input):
 
 def welcomeScreen():
     print('''
-        Welcome to...
 
-        ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-        ██░▄▄▀██░▄▄▄░█░▄▄▀██░▄▄▀██░▄▄▀██░▄▄░█░▄▄▀██░▄▀▄░██░▄▄▄████░▄▄░█▄░▄██░▄▄▀██░█▀▄██░▄▄▄██░▄▄▀██
-        ██░▄▄▀██░███░█░▀▀░██░▀▀▄██░██░██░█▀▀█░▀▀░██░█░█░██░▄▄▄████░▀▀░██░███░█████░▄▀███░▄▄▄██░▀▀▄██
-        ██░▀▀░██░▀▀▀░█░██░██░██░██░▀▀░██░▀▀▄█░██░██░███░██░▀▀▀████░████▀░▀██░▀▀▄██░██░██░▀▀▀██░██░██
-        ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 
+    
+    ░░░░░░   ░░░░░░   ░░░░░  ░░░░░░  ░░░░░░   ░░░░░░   ░░░░░  ░░░    ░░░ ░░░░░░░     ░░░░░░  ░░  ░░░░░░ ░░   ░░ ░░░░░░░ ░░░░░░  
+    ▒▒   ▒▒ ▒▒    ▒▒ ▒▒   ▒▒ ▒▒   ▒▒ ▒▒   ▒▒ ▒▒       ▒▒   ▒▒ ▒▒▒▒  ▒▒▒▒ ▒▒          ▒▒   ▒▒ ▒▒ ▒▒      ▒▒  ▒▒  ▒▒      ▒▒   ▒▒ 
+    ▒▒▒▒▒▒  ▒▒    ▒▒ ▒▒▒▒▒▒▒ ▒▒▒▒▒▒  ▒▒   ▒▒ ▒▒   ▒▒▒ ▒▒▒▒▒▒▒ ▒▒ ▒▒▒▒ ▒▒ ▒▒▒▒▒       ▒▒▒▒▒▒  ▒▒ ▒▒      ▒▒▒▒▒   ▒▒▒▒▒   ▒▒▒▒▒▒  
+    ▓▓   ▓▓ ▓▓    ▓▓ ▓▓   ▓▓ ▓▓   ▓▓ ▓▓   ▓▓ ▓▓    ▓▓ ▓▓   ▓▓ ▓▓  ▓▓  ▓▓ ▓▓          ▓▓      ▓▓ ▓▓      ▓▓  ▓▓  ▓▓      ▓▓   ▓▓ 
+    ██████   ██████  ██   ██ ██   ██ ██████   ██████  ██   ██ ██      ██ ███████     ██      ██  ██████ ██   ██ ███████ ██   ██ 
+
+
+
+    It's Game Night! Are you having trouble picking a game, or want to try something new?
+
+    This app is designed to give you some suggestions, after answering a few short questions.
+
+
+    Instructions:
+
+        1. Choose the number of players.
+
+        2. Choose the game duration.
+
+        3. Choose a genre.
+
+        4. Get results!
+
+
+    You can quit the application at any stage by entering 'q' or 'quit'.
+
+
+    Now, let's find a game to play!
+
+
+    █▓▒▒░░░ Game on! ░░░▒▒▓█
 
     ''')
 
@@ -28,18 +54,18 @@ def getNumberOfPlayers():
     while True: 
 
         # receive user answer for number of players
-        answer = input('''\n\tHow many people are playing?
+        answer = input('''\nHow many people are playing?
         
-        [1] One Player
-        [2] Two Players
-        [3] Three or more Players
+\t[1] One Player
+\t[2] Two Players
+\t[3] Three or more Players
 
-\tYour Answer: ''')
+Your Answer: ''')
 
         if quitting(answer):
             quit()
 
-        errorMessage = "\n\tInvalid input. Please choose 1, 2, or 3.\n"
+        errorMessage = "\nInvalid input. Please choose 1, 2, or 3.\n"
 
         try:
             # try converting to int
@@ -61,17 +87,17 @@ def getGameDuration():
     while True: 
 
         # receive user answer for game duration
-        answer = input('''\tHow long would you like the game to go?
+        answer = input('''How long would you like the game to go?
         
-        [1] Short (under 1 hour)
-        [2] Long (over 1 hour)
+\t[1] Short (under 1 hour)
+\t[2] Long (over 1 hour)
 
-\tYour Answer: ''')
+Your Answer: ''')
 
         if quitting(answer):
             quit()
     
-        errorMessage = "\n\tInvalid input. Please choose 1 or 2.\n"
+        errorMessage = "\nInvalid input. Please choose 1 or 2.\n"
     
         try:
             # try converting to int
@@ -107,15 +133,15 @@ def getGameGenre(players, duration):
     while True: 
 
         # receive user answer for game genre preference
-        answer = input(f'''\tWhat kind of game would you like to play?
+        answer = input(f'''What game genre would you like to play?
 
-    {genreList}        
-\tYour Answer: ''')
+{genreList}
+Your Answer: ''')
 
         if quitting(answer):
             quit()
     
-        errorMessage = "\n\tInvalid input. Please choose a number from the options available.\n"
+        errorMessage = "\nInvalid input. Please choose a number from the options available.\n"
 
         try:
             # convert to int
@@ -158,26 +184,26 @@ def runApp():
     while True:
         # program starts here
         user_players = getNumberOfPlayers()
-        print(f"\n\tNumber of players: {user_players}\n")
+        print(f"\nNumber of players: {user_players}\n")
 
         user_duration = getGameDuration()
-        print(f"\n\tCool! Let's look for a {user_duration} game to play.\n")
+        print(f"\nCool! Let's look for a {user_duration} game to play.\n")
 
         user_genre = getGameGenre(user_players, user_duration)
-        print(f"\n\tAwesome! Here are some {user_duration} {user_players} player games in the {user_genre} genre you can play!\n")
+        print(f"\nAwesome! Here are some {user_duration} {user_players} player games in the {user_genre} genre you can play!\n")
 
         getGameRecs(user_players, user_duration, user_genre)
         print()
 
         # loop to ask user if they would like to restart
         while True:
-            ask_restart = (input("\tWould you like to try again? (Y/N)\n\t")).upper()
+            ask_restart = (input("Would you like to try again? (Y/N)\n")).upper()
 
             if ask_restart == "N":
-                print("\tSee you next time!\n")
+                print("See you next time!\n")
                 quit()
             elif ask_restart != "Y":
-                print("\tInvalid input. Please enter Y or N.\n")
+                print("Invalid input. Please enter Y or N.\n")
             else:
                 break
 

@@ -34,17 +34,15 @@ Questions will be gated and multiple choice for ease of use, so the application 
 
 ### Branching Paths
 
-Users will be able to choose between 3 different options for the number of people playing: single-player, two-player, or party games. After that, users can choose from game duration - either 'Short' (under 1 hour) or 'Long' (over 1 hour). This will then lock out certain genre options in the subsequent question, which further narrow it down when it comes to the game recommendations in the end.
+Users will be able to choose between 3 different options for the number of people playing: single-player, two-player, or 3+ (party) player games. After that, users can choose the game duration - either 'Short' (under 1 hour) or 'Long' (over 1 hour). This will then lock out certain genre options in the subsequent question, which the narrows down the available game recommendations in the end.
 
 ### Multiple Choice
 
 The options offered by the app will be multiple choice. As mentioned in sections prior, this will help guide users in making the correct syntactic options. Any incorrect inputs will trigger a loop until the user chooses an available option.
 
-### Managed Database
+### Dataset
 
-The list of tabletop games will be managed in a separate database file, which the application can reference from. I have chosen to use `JSON` as it is a built-in Python package and very closely mimics elements of dictionaries and lists we have learned about in class thus far. `MySQL` and `MongoDB` were considered, but felt like too big a challenge to learn with the current timeline.
-
-Outside of adding new genres/categories of games, this will also allow for new titles to be added (to the JSON file) without altering the application code.
+The list of tabletop games will come from a separate dataset file, which the application can reference from. I have chosen to use `JSON` as it is a built-in Python package and very closely mimics elements of dictionaries and lists we have learned about in class thus far. Outside of adding new genres/categories of games, this will also allow for new titles to be added (to the JSON file) without altering the application code.
 
 ### Restart/Exit
 
@@ -52,8 +50,9 @@ At the end of the questions segment, users wil be given a list of games that wil
 
 ### **Additional Features**
 
-Some possible additional features to be implemented after core set runs (with no errors):
+Some additional features that can be implemented after core features run (with no errors):
 
+* Include an "I'm Feeling Lucky" function that allows users to output a single, randomised game suggestion at the start of the program.
 * Add 'Player Interaction' field as another qualifier/filter, so that user/s can choose between competitive and cooperative styles of games ("NA" included for single-player games; "Romantic" included for _some_ two-player games).
 * "Back Button"/Redo Last - to allow users to go back to the previous question.
 * Clear screen/full screen app display
@@ -81,6 +80,7 @@ Incorrect inputs will trigger a loop asking the user to redo their answer with a
 
 ## Implementation Plan
 
+![img] *Trello Board
 
 
 ## Status Updates
