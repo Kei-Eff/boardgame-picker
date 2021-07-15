@@ -8,22 +8,38 @@ games = game_data["boardgames"]
 def quitting(user_input):
     return user_input.lower() == "quit" or user_input.lower() == "q"
 
+
+def welcomeScreen():
+    print('''
+        Welcome to...
+
+        ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+        ██░▄▄▀██░▄▄▄░█░▄▄▀██░▄▄▀██░▄▄▀██░▄▄░█░▄▄▀██░▄▀▄░██░▄▄▄████░▄▄░█▄░▄██░▄▄▀██░█▀▄██░▄▄▄██░▄▄▀██
+        ██░▄▄▀██░███░█░▀▀░██░▀▀▄██░██░██░█▀▀█░▀▀░██░█░█░██░▄▄▄████░▀▀░██░███░█████░▄▀███░▄▄▄██░▀▀▄██
+        ██░▀▀░██░▀▀▀░█░██░██░██░██░▀▀░██░▀▀▄█░██░██░███░██░▀▀▀████░████▀░▀██░▀▀▄██░██░██░▀▀▀██░██░██
+        ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+
+
+    ''')
+
+
+
 def getNumberOfPlayers():
     while True: 
 
         # receive user answer for number of players
-        answer = input('''\nHow many people are playing?
+        answer = input('''\n\tHow many people are playing?
         
         [1] One Player
         [2] Two Players
         [3] Three or more Players
 
-Your Answer: ''')
+\tYour Answer: ''')
 
         if quitting(answer):
             quit()
 
-        errorMessage = "\nInvalid input. Please choose 1, 2, or 3.\n"
+        errorMessage = "\n\tInvalid input. Please choose 1, 2, or 3.\n"
 
         try:
             # try converting to int
@@ -45,17 +61,17 @@ def getGameDuration():
     while True: 
 
         # receive user answer for game duration
-        answer = input('''How long would you like the game to go?
+        answer = input('''\tHow long would you like the game to go?
         
         [1] Short (under 1 hour)
         [2] Long (over 1 hour)
 
-Your Answer: ''')
+\tYour Answer: ''')
 
         if quitting(answer):
             quit()
     
-        errorMessage = "\nInvalid input. Please choose 1 or 2.\n"
+        errorMessage = "\n\tInvalid input. Please choose 1 or 2.\n"
     
         try:
             # try converting to int
@@ -91,15 +107,15 @@ def getGameGenre(players, duration):
     while True: 
 
         # receive user answer for game genre preference
-        answer = input(f'''What kind of game would you like to play?
+        answer = input(f'''\tWhat kind of game would you like to play?
 
     {genreList}        
-Your Answer: ''')
+\tYour Answer: ''')
 
         if quitting(answer):
             quit()
     
-        errorMessage = "\nInvalid input. Please choose a number from the options available.\n"
+        errorMessage = "\n\tInvalid input. Please choose a number from the options available.\n"
 
         try:
             # convert to int
@@ -137,29 +153,31 @@ def getGameRecs(players, duration, genre):
 
 def runApp():
 
+    welcomeScreen()
+
     while True:
         # program starts here
         user_players = getNumberOfPlayers()
-        print(f"\nNumber of players: {user_players}\n")
+        print(f"\n\tNumber of players: {user_players}\n")
 
         user_duration = getGameDuration()
-        print(f"\nCool! Let's look for a {user_duration} game to play.\n")
+        print(f"\n\tCool! Let's look for a {user_duration} game to play.\n")
 
         user_genre = getGameGenre(user_players, user_duration)
-        print(f"\nAwesome! Here are some {user_duration} {user_players} player games in the {user_genre} genre you can play!\n")
+        print(f"\n\tAwesome! Here are some {user_duration} {user_players} player games in the {user_genre} genre you can play!\n")
 
         getGameRecs(user_players, user_duration, user_genre)
         print()
 
         # loop to ask user if they would like to restart
         while True:
-            ask_restart = (input("Would you like to try again? (Y/N)\n")).upper()
+            ask_restart = (input("\tWould you like to try again? (Y/N)\n\t")).upper()
 
             if ask_restart == "N":
-                print("See you next time!\n")
+                print("\tSee you next time!\n")
                 quit()
             elif ask_restart != "Y":
-                print("Invalid input. Please enter Y or N.\n")
+                print("\tInvalid input. Please enter Y or N.\n")
             else:
                 break
 
