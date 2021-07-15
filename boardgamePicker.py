@@ -6,11 +6,12 @@ with open("gamesList.json", "r") as json_file:
 games = game_data["boardgames"]
 
 
+
 def getNumberOfPlayers():
     while True: 
 
         # receive user answer for number of players
-        answer = input('''How many people are playing?
+        answer = input('''\nHow many people are playing?
         
         [1] One Player
         [2] Two Players
@@ -79,8 +80,6 @@ def getGameGenre(players, duration):
     for x in range(len(genres)):
         genreList = genreList + f"\t[{x + 1}] {genres[x]}\n"
 
-    # print(*filteredGames, sep='\n')
-    # print(genreList)
 
     while True: 
 
@@ -90,7 +89,7 @@ def getGameGenre(players, duration):
     {genreList}        
 Your Answer: ''')
     
-        errorMessage = "\nInvalid input. Please choose from the options available.\n"
+        errorMessage = "\nInvalid input. Please choose a number from the options available.\n"
 
         try:
             # convert to int
@@ -116,18 +115,30 @@ def getGameRecs(players, duration, genre):
 
     # prints final game suggestions!
     for x in sortedList:
-        print(f"\t* {x['name']} - {x['description']}\n")
+        print(f'''
+        
+         █▓▒▒░░░ {x['name']} ░░░▒▒▓█
+
+         Description: {x['description']}
+        
+        
+        ''')
 
 
-# program starts here
-user_players = getNumberOfPlayers()
-print(f"\nNumber of players: {user_players}\n")
+def runApp():
 
-user_duration = getGameDuration()
-print(f"\nCool! Let's look for a {user_duration} game to play.\n")
+    # program starts here
+    user_players = getNumberOfPlayers()
+    print(f"\nNumber of players: {user_players}\n")
 
-user_genre = getGameGenre(user_players, user_duration)
-print(f"\nAwesome! Here are some {user_duration} {user_players} player games in the {user_genre} genre you can play!\n")
+    user_duration = getGameDuration()
+    print(f"\nCool! Let's look for a {user_duration} game to play.\n")
 
-getGameRecs(user_players, user_duration, user_genre)
-print()
+    user_genre = getGameGenre(user_players, user_duration)
+    print(f"\nAwesome! Here are some {user_duration} {user_players} player games in the {user_genre} genre you can play!\n")
+
+    getGameRecs(user_players, user_duration, user_genre)
+    print()
+
+
+runApp()
