@@ -5,7 +5,8 @@ with open("gamesList.json", "r") as json_file:
 
 games = game_data["boardgames"]
 
-
+def quitting(user_input):
+    return user_input.lower() == "quit" or user_input.lower() == "q"
 
 def getNumberOfPlayers():
     while True: 
@@ -18,7 +19,10 @@ def getNumberOfPlayers():
         [3] Three or more Players
 
 Your Answer: ''')
-    
+
+        if quitting(answer):
+            quit()
+
         errorMessage = "\nInvalid input. Please choose 1, 2, or 3.\n"
 
         try:
@@ -47,6 +51,9 @@ def getGameDuration():
         [2] Long (over 1 hour)
 
 Your Answer: ''')
+
+        if quitting(answer):
+            quit()
     
         errorMessage = "\nInvalid input. Please choose 1 or 2.\n"
     
@@ -88,6 +95,9 @@ def getGameGenre(players, duration):
 
     {genreList}        
 Your Answer: ''')
+
+        if quitting(answer):
+            quit()
     
         errorMessage = "\nInvalid input. Please choose a number from the options available.\n"
 
@@ -127,18 +137,31 @@ def getGameRecs(players, duration, genre):
 
 def runApp():
 
-    # program starts here
-    user_players = getNumberOfPlayers()
-    print(f"\nNumber of players: {user_players}\n")
+    while True:
+        # program starts here
+        user_players = getNumberOfPlayers()
+        print(f"\nNumber of players: {user_players}\n")
 
-    user_duration = getGameDuration()
-    print(f"\nCool! Let's look for a {user_duration} game to play.\n")
+        user_duration = getGameDuration()
+        print(f"\nCool! Let's look for a {user_duration} game to play.\n")
 
-    user_genre = getGameGenre(user_players, user_duration)
-    print(f"\nAwesome! Here are some {user_duration} {user_players} player games in the {user_genre} genre you can play!\n")
+        user_genre = getGameGenre(user_players, user_duration)
+        print(f"\nAwesome! Here are some {user_duration} {user_players} player games in the {user_genre} genre you can play!\n")
 
-    getGameRecs(user_players, user_duration, user_genre)
-    print()
+        getGameRecs(user_players, user_duration, user_genre)
+        print()
+
+        # loop to ask user if they would like to restart
+        while True:
+            ask_restart = (input("Would you like to try again? (Y/N)\n")).upper()
+
+            if ask_restart == "N":
+                print("See you next time!\n")
+                quit()
+            elif ask_restart != "Y":
+                print("Invalid input. Please enter Y or N.\n")
+            else:
+                break
 
 
 runApp()
