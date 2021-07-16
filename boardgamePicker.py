@@ -1,18 +1,23 @@
 import json
+import os
 
 with open("./data/gamesList.json", "r") as json_file:
     game_data = json.load(json_file)
 
 games = game_data["boardgames"]
 
+# thank you Google
+def clear_screen():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+
 def quitting(user_input):
     return user_input.lower() == "quit" or user_input.lower() == "q"
 
 
-def welcomeScreen():
+def titleBanner():
     print('''
-
-
+    
     
     ░░░░░░   ░░░░░░   ░░░░░  ░░░░░░  ░░░░░░   ░░░░░░   ░░░░░  ░░░    ░░░ ░░░░░░░     ░░░░░░  ░░  ░░░░░░ ░░   ░░ ░░░░░░░ ░░░░░░  
     ▒▒   ▒▒ ▒▒    ▒▒ ▒▒   ▒▒ ▒▒   ▒▒ ▒▒   ▒▒ ▒▒       ▒▒   ▒▒ ▒▒▒▒  ▒▒▒▒ ▒▒          ▒▒   ▒▒ ▒▒ ▒▒      ▒▒  ▒▒  ▒▒      ▒▒   ▒▒ 
@@ -21,36 +26,43 @@ def welcomeScreen():
     ██████   ██████  ██   ██ ██   ██ ██████   ██████  ██   ██ ██      ██ ███████     ██      ██  ██████ ██   ██ ███████ ██   ██ 
 
 
+    ''')
 
-    It's Game Night! Are you having trouble picking a game, or want to try something new?
 
-    This app is designed to give you some suggestions, after answering a few short questions.
+def welcomeScreen():
+
+    clear_screen()
+
+    print('''
+    █▓▒▒░░░ Welcome to The Boardgame Picker! ░░░▒▒▓█
+
+    It's Game Night! Need some help picking a game? Maybe after something new?
+
+    This app is designed to give you some tabletop game suggestions, after answering a few short questions.
 
 
     Instructions:
 
         1. Choose the number of players.
 
-        2. Choose the game duration.
+        2. Select the game duration.
 
-        3. Choose a genre.
+        3. Pick a genre.
 
         4. Get results!
-
+    
 
     You can quit the application at any stage by entering 'q' or 'quit'.
 
 
     Now, let's find a game to play!
-
-
-    █▓▒▒░░░ Game on! ░░░▒▒▓█
-
     ''')
 
 
-
 def getNumberOfPlayers():
+
+    titleBanner()
+
     while True: 
 
         # receive user answer for number of players
@@ -84,6 +96,11 @@ Your Answer: ''')
 
 
 def getGameDuration():
+
+    clear_screen()
+
+    titleBanner()
+
     while True: 
 
         # receive user answer for game duration
@@ -116,6 +133,10 @@ Your Answer: ''')
 
 def getGameGenre(players, duration):
 
+    clear_screen()
+
+    titleBanner()
+    
     filteredGames = filter(lambda game: players in game["players"] and duration in game["duration"], games)
 
     # convert genre values from dictionary to list of games
@@ -128,7 +149,6 @@ def getGameGenre(players, duration):
     genreList = ""
     for x in range(len(genres)):
         genreList = genreList + f"\t[{x + 1}] {genres[x]}\n"
-
 
     while True: 
 
@@ -158,7 +178,7 @@ Your Answer: ''')
 
 
 def getGameRecs(players, duration, genre):
-
+    
     filteredGames = filter(lambda game: players in game["players"] and duration in game["duration"] and genre in game["genre"], games)
 
     gamesList = list(filteredGames)
@@ -172,8 +192,7 @@ def getGameRecs(players, duration, genre):
          █▓▒▒░░░ {x['name']} ░░░▒▒▓█
 
          Description: {x['description']}
-        
-        
+                
         ''')
 
 
@@ -184,20 +203,22 @@ def runApp():
     while True:
         # program starts here
         user_players = getNumberOfPlayers()
-        print(f"\nNumber of players: {user_players}\n")
+        # print(f"\nNumber of players: {user_players}\n")
+        # REMOVED AFTER GETTING CLI/CLEAR TERMINAL TO WORK
 
         user_duration = getGameDuration()
-        print(f"\nCool! Let's look for a {user_duration} game to play.\n")
+        # print(f"\nAwesome! Let's look for a {user_duration} game to play.\n")
+        # REMOVED AFTER GETTING CLI/CLEAR TERMINAL TO WORK
 
         user_genre = getGameGenre(user_players, user_duration)
-        print(f"\nAwesome! Here are some {user_duration} {user_players} player games in the {user_genre} genre you can play!\n")
+        print(f"\nGreat! Here are some {user_duration} {user_players} player games in the {user_genre} genre you can play!\n")
 
         getGameRecs(user_players, user_duration, user_genre)
         print()
 
         # loop to ask user if they would like to restart
         while True:
-            ask_restart = (input("Would you like to try again? (Y/N)\n")).upper()
+            ask_restart = (input("Would you like to start again? (Y/N)\n")).upper()
 
             if ask_restart == "N":
                 print("See you next time!\n")
@@ -205,6 +226,7 @@ def runApp():
             elif ask_restart != "Y":
                 print("Invalid input. Please enter Y or N.\n")
             else:
+                clear_screen()
                 break
 
 

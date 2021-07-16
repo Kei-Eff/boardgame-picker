@@ -16,7 +16,7 @@ Features that are core to the application and **must** run.
 |                                           | Error Handling - `try/except` block fails gracefully + displays error message?                                          | High     | 15/07/2021 |
 |                                           | Error Handling - `if/elif/else` shows error message for ValueErrors?                                               | Medium   | 15/07/2021 |
 |                                           |                                                                                                                      |          |            |
-| Output Recommendations with extra details | Given previous features; outputs displays games, along with a short 'Description' from the dataset                   | Medium   | 16/07/2021 |
+| Output Recommendations with extra details | Given previous features; output displays games, along with a short 'Description' from the dataset                   | Medium   | 16/07/2021 |
 |                                           |                                                                                                                      |          |            |
 | Dataset                                   | Ensure format can contain individual objects                                                                         | High     | 14/07/2021 |
 |                                           | Populate with game entries                                                                                           | High     | 14/07/2021 |
