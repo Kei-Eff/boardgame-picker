@@ -77,7 +77,9 @@ Incorrect inputs will trigger a loop asking the user to redo their answer with a
 
 ## Control Flow Diagram
 
-![Control Flow Diagram]()
+Control Flow Diagram that illustrates how users will interact with the application and its features. A PDF version can also be found [here](./assets/control-flow-diagram-v2.pdf).
+
+![Control Flow Diagram](./assets/control-flow-diagram-v2.png)
 
 ## Implementation Plan
 

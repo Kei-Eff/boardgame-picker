@@ -3,6 +3,28 @@ CCC-2021 T1A3 - Terminal Application - Karl Alberto
 
 # Development Log
 
+## Update 3
+### Saturday, 17 July 2021
+
+#### **Key Development Items**
+
+* CLI/Clear Terminal functions added to app!
+* Testing complete (minus testing clear terminal)
+
+#### **Issues Encountered**
+
+* Had to remove user input display to more smoothly facilitate the clear terminal function. This used to be displayed after each question was answered by the user, leading into the following question.
+
+#### **Development Roadblocks**
+
+* Still working on bash script/wrapper.
+
+#### **Miscellaneous Notes**
+
+* Minor flavour text edits.
+
+---
+
 ## Update 2
 ### Friday, 16 July 2021
 
