@@ -48,6 +48,9 @@ The list of tabletop games will come from a separate dataset file, which the app
 
 At the end of the questions segment, users wil be given a list of games that will suit the requirements of the user. Afterwards, they will be given the option to exit the application, or to restart and go through the process again (for a different result).
 
+*Spreadsheet of games to include in dataset:*
+![Spreadsheet of games to add to dataset](./assets/gamesListComplete.png)
+
 ### **Additional Features**
 
 Some additional features that can be implemented after core features run (with no errors):
@@ -125,5 +128,3 @@ Included below are some key development milestones, with more details in the doc
 ## Application Testing
 
 Spreadsheets for testing can be found here: [T1A3 - Application Testing](https://docs.google.com/spreadsheets/d/1MtP1JEIxziC8FzLlZQdMe6uaXkr8M-RvtGlvbbMq3Fk/edit?usp=sharing)
-
-## Developer Notes
