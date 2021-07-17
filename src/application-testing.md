@@ -18,7 +18,7 @@ Overview of the main testing methodology applied for the following features:
 |                   |                                                                                                   |                                                                                             |                                                                          |                  |                                                                                                                               |            |
 | Error Handling    | Run program and enter incorrect string or characters at each question                             | ValueError message triggers, user is asked to enter selectable answer from options given    | No issues encountered                                                    | N/A              | Working as expected                                                                                                           | N/A        |
 
-![Test Results - Final Screen Example](./assets/testResultsFinalScreen.png)
+![Test Results - Final Screen Example](../assets/testResultsFinalScreen.png)
 
 ## Individual Feature Test Results
 
@@ -70,7 +70,7 @@ Spreadsheet of each iteration of user quitting:
 | QUIT       | Run program, enter term at each question interval          | Quits program   | 3                        | No issues encountered |
 | QUIt       | Run program, enter term at each question interval          | Quits program   | 3                        | No issues encountered |
 
-![Quit Testing Example](./assets/randomQuitTest.png)
+![Quit Testing Example](../assets/randomQuitTest.png)
 
 ## Developer Notes
 

@@ -124,4 +124,6 @@ Included below are some key development milestones, with more details in the doc
 
 ## Application Testing
 
+Spreadsheets for testing can be found here: [T1A3 - Application Testing](https://docs.google.com/spreadsheets/d/1MtP1JEIxziC8FzLlZQdMe6uaXkr8M-RvtGlvbbMq3Fk/edit?usp=sharing)
+
 ## Developer Notes

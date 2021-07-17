@@ -17,7 +17,7 @@ CCC-2021 T1A3 - Terminal Application - Karl Alberto
 #### **Issues Encountered**
 
 * Had to remove user input display to facilitate the clear terminal function. (This used to be displayed after each question was answered by the user, leading into the following question)
-* Bug found: issue with 'genre' field found during testing: 'Light Strategy' genre gets picked up in the 'Strategy' genre as well. Problem not present with 'Grand Strategy' yet, as that genre currently only exists in "2-player, long game" situations.
+* Bug found: issue with 'genre' field found during testing: 'Light Strategy' genre gets picked up in the 'Strategy' genre as well. Problem not present with 'Grand Strategy', as that genre currently only exists in "2-player, long game" situations.
 
 #### **Development Roadblocks**
 
@@ -26,6 +26,12 @@ CCC-2021 T1A3 - Terminal Application - Karl Alberto
 #### **Miscellaneous Notes**
 
 * Minor flavour text edits.
+
+#### Trello Updates
+
+![Trello Board at 17.07.2021 early am](./assets/trelloUpdate17.07.2021a.png)
+
+![Trello Board at 17.07.2021 late am](./assets/trelloUpdate17.07.2021b.png)
 
 ---
 

@@ -1,7 +1,7 @@
 import json
 import os
 
-with open("./data/gamesList.json", "r") as json_file:
+with open("./gamesList.json", "r") as json_file:
     game_data = json.load(json_file)
 
 games = game_data["boardgames"]
@@ -203,11 +203,8 @@ def runApp():
     while True:
         # program starts here
         user_players = getNumberOfPlayers()
-        # print(f"\nNumber of players: {user_players}\n")
-        # REMOVED AFTER GETTING CLI/CLEAR TERMINAL TO WORK
 
         user_duration = getGameDuration()
-        # print(f"\nAwesome! Let's look for a {user_duration} game to play.\n")
 
         user_genre = getGameGenre(user_players, user_duration)
         print(f"\nGreat! Here are some {user_duration} {user_players} player games in the {user_genre} genre you can play!\n")
