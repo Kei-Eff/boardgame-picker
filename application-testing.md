@@ -64,11 +64,11 @@ Spreadsheet of each iteration of user quitting:
 | Quit at Q3 | Run program, select option at Q1 and Q2, then 'quit' at Q3 | Quits program   | 4                        | No issues encountered |
 | Q at Q3    | Run program, select option at Q1 and Q2, then 'q' at Q3    | Quits program   | 4                        | No issues encountered |
 |            |                                                            |                 |                          |                       |
-| qUit       | Run program, enter term at each question interval          | Quits program   | 2                        | No issues encountered |
-| QuIT       | Run program, enter term at each question interval          | Quits program   | 2                        | No issues encountered |
-| quiT       | Run program, enter term at each question interval          | Quits program   | 2                        | No issues encountered |
-| QUIT       | Run program, enter term at each question interval          | Quits program   | 2                        | No issues encountered |
-| QUIt       | Run program, enter term at each question interval          | Quits program   | 2                        | No issues encountered |
+| qUit       | Run program, enter term at each question interval          | Quits program   | 3                        | No issues encountered |
+| QuIT       | Run program, enter term at each question interval          | Quits program   | 3                        | No issues encountered |
+| quiT       | Run program, enter term at each question interval          | Quits program   | 3                        | No issues encountered |
+| QUIT       | Run program, enter term at each question interval          | Quits program   | 3                        | No issues encountered |
+| QUIt       | Run program, enter term at each question interval          | Quits program   | 3                        | No issues encountered |
 
 ![Quit Testing Example](./assets/randomQuitTest.png)
 
