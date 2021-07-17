@@ -1,4 +1,10 @@
 #!/bin/bash
+if [[ $1 == '-help' ]]
+then
+    cat help.txt
+    exit 0
+fi
+
 if ! [[ -x "$(command -v python3)" ]]
 then
   echo 'Error: 

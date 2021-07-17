@@ -217,7 +217,8 @@ def runApp():
             ask_restart = (input("Would you like to start again? (Y/N)\n")).upper()
 
             if ask_restart == "N":
-                print("See you next time!\n")
+                clear_screen()
+                print("\n█▓▒▒░░░ See you next time! ░░░▒▒▓█\n")
                 quit()
             elif ask_restart != "Y":
                 print("Invalid input. Please enter Y or N.\n")
