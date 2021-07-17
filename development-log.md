@@ -12,7 +12,7 @@ CCC-2021 T1A3 - Terminal Application - Karl Alberto
 * Testing complete (minus testing clear terminal).
 * Fixed genre issue (problem detailed below) where 'genre' clash appeared.
     * Fixed 'getGameRecs' function, so that 'filteredGames' variable looked for an exact match for genre.
-* Basic bash script created.
+* Basic bash script finished.
 
 #### **Issues Encountered**
 
@@ -21,17 +21,21 @@ CCC-2021 T1A3 - Terminal Application - Karl Alberto
 
 #### **Development Roadblocks**
 
-* Still working on bash script/wrapper.
+* ~~Still working on bash script/wrapper.~~ Updated and running, as at 16:00 17/07/2021
 
 #### **Miscellaneous Notes**
 
 * Minor flavour text edits.
 
-#### Trello Updates
+#### **Trello Updates**
 
 ![Trello Board at 17.07.2021 early am](./assets/trelloUpdate17.07.2021a.png)
 
 ![Trello Board at 17.07.2021 late am](./assets/trelloUpdate17.07.2021b.png)
+
+Only extras left in both Documentation and Development sections!
+
+![Trello Board at 17.07.2021 16:00](./assets/trelloUpdate17.07.2021c.png)
 
 ---
 
