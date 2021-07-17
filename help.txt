@@ -2,6 +2,8 @@ How to Install and Run 'Boardgame Picker'
 
 ***
 This program runs in the terminal and requires Python 3 to be installed. This will not run on Python 2.
+To install Python, check out https://installpython3.com/
+
 No external packages are required to run this app.
 
 Tested working on Python 3.8.10, as of 17.07.2021.
@@ -14,3 +16,14 @@ Tested working on Python 3.8.10, as of 17.07.2021.
 chmod +x boardgamepicker.sh
 ./boardgamepicker.sh
 
+***
+
+How to Use 'Boardgame Picker'
+
+1. Choose the number of players.
+2. Select the game duration.
+3. Pick a genre.
+4. View results.
+5. Choose to restart or exit application.
+
+***

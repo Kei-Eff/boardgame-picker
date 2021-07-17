@@ -179,7 +179,7 @@ Your Answer: ''')
 
 def getGameRecs(players, duration, genre):
     
-    filteredGames = filter(lambda game: players in game["players"] and duration in game["duration"] and genre in game["genre"], games)
+    filteredGames = filter(lambda game: players in game["players"] and duration in game["duration"] and genre == game["genre"], games)
 
     gamesList = list(filteredGames)
 
@@ -208,7 +208,6 @@ def runApp():
 
         user_duration = getGameDuration()
         # print(f"\nAwesome! Let's look for a {user_duration} game to play.\n")
-        # REMOVED AFTER GETTING CLI/CLEAR TERMINAL TO WORK
 
         user_genre = getGameGenre(user_players, user_duration)
         print(f"\nGreat! Here are some {user_duration} {user_players} player games in the {user_genre} genre you can play!\n")

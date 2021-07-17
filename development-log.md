@@ -9,11 +9,15 @@ CCC-2021 T1A3 - Terminal Application - Karl Alberto
 #### **Key Development Items**
 
 * CLI/Clear Terminal functions added to app!
-* Testing complete (minus testing clear terminal)
+* Testing complete (minus testing clear terminal).
+* Fixed genre issue (problem detailed below) where 'genre' clash appeared.
+    * Fixed 'getGameRecs' function, so that 'filteredGames' variable looked for an exact match for genre.
+* Basic bash script created.
 
 #### **Issues Encountered**
 
-* Had to remove user input display to more smoothly facilitate the clear terminal function. This used to be displayed after each question was answered by the user, leading into the following question.
+* Had to remove user input display to facilitate the clear terminal function. (This used to be displayed after each question was answered by the user, leading into the following question)
+* Bug found: issue with 'genre' field found during testing: 'Light Strategy' genre gets picked up in the 'Strategy' genre as well. Problem not present with 'Grand Strategy' yet, as that genre currently only exists in "2-player, long game" situations.
 
 #### **Development Roadblocks**
 
